@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { log } from './logging';
 
 function App() {
+  log('This is an info message', 'info');
+  log('This is a debug message', 'debug');
+  log('This is a warning', 'warn');
+  log('This is an error message', 'error');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Check your console for logs!</h1>
     </div>
   );
 }
